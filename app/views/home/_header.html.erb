@@ -21,9 +21,11 @@
        
             <li><%= link_to 'Strona głowna', root_path %> </li>
             <li><%= link_to 'O mnie ', home_about_path %> </li>
+            <li><%= link_to 'Lista Projektów ', pins_path %> </li>
             
               <% if user_signed_in? %>
                 <li><%= link_to 'Edycja profilu ', edit_user_registration_path %> </li>
+                <li><%= link_to 'Nowy Projekt', new_pin_path %></li>
                 <li><%= link_to 'Wylogowanie ', destroy_user_session_path, method: delete %> </li>
                 
                 <% else %>
