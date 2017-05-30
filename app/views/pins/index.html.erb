@@ -18,7 +18,8 @@
         <td><%= pin.description %></td>
         <td><%= link_to 'Wyswietl', pin %></td>
         <td><%= link_to 'Edycja', edit_pin_path(pin) %></td>
-        <td><%= link_to 'Usun', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usun', pin, method: :delete, data: { confirm: 'Jesetes pewien?' } %></td>
+        
       </tr>
     <% end %>
   </tbody>
