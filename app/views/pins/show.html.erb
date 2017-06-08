@@ -1,10 +1,16 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading center"><%= image_tag @pin.image.url(:medium) %></div>
+        <div class="panel-body">
+      
+           <%= @pin.description %><br/>
 
-<p>
-  <%= image_tag @pin.image.url (:medium) %><br/>
-  <strong>Opis:</strong>
-  <%= @pin.description %>
-</p>
 
-<%= link_to 'Edycja', edit_pin_path(@pin) %> |
-<%= link_to 'Wstecz', pins_path %>
+  <%= link_to 'Edycja', edit_pin_path(@pin) %>
+  <%= link_to 'Wstecz', pins_path %>
+      </div>
+    </div>
+  </div>
+</div>
+
