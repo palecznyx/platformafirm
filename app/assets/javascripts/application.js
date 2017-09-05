@@ -17,4 +17,5 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require masonry/jquery.masonry
+//= require ckeditor/init
 //= require_tree .

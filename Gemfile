@@ -29,11 +29,21 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
+gem 'carrierwave', '~> 1.1'
+
+gem 'fog', '~> 1.41'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
+gem 'ckeditor', '~> 4.2', '>= 4.2.4'
+
+gem 'mini_magick', '~> 4.8'
+
 gem 'devise', '~> 4.2', '>= 4.2.1'
+
+gem 'sprockets', '~> 3.7', '>= 3.7.1'
 
 group :development, :test do
   gem 'byebug'

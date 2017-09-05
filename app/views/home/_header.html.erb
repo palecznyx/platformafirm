@@ -1,10 +1,6 @@
-<%= link_to 'Strona głowna', root_path %>
-<%= link_to 'O mnie', home_about_path %>
-
-
 <nav class="navbar navbar-default">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -15,14 +11,13 @@
       <%= link_to  'PlatformaFirm' , root_path, class: 'navbar-brand' %>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
        
             <li><%= link_to 'Strona głowna', root_path %> </li>
             <li><%= link_to 'O mnie ', home_about_path %> </li>
             <li><%= link_to 'Lista Projektów ', pins_path %> </li>
-            
+               <li><%= link_to 'Oferta dla klientów indywidualnych ', home_dane_path %> </li>
               <% if user_signed_in? %>
                 <li><%= link_to 'Edycja profilu ', edit_user_registration_path %> </li>
                 <li><%= link_to 'Nowy Projekt', new_pin_path %></li>

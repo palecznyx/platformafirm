@@ -2,6 +2,15 @@ $jumbutron-bg:blue;
 $body-bg:white;
 
 
+$body-bg: #BC8F8F;
+
+
+$navbar-default-bg: #c2c2c2;
+$navbar-height: 40px;
+
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.center { text-align: center;
+}
