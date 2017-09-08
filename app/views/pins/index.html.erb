@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><h2>Lista projektow</h2></div>
+  <div class="panel-heading"><h2>Lista projektów</h2></div>
   <div class="panel-body">
     
 <table>
@@ -15,11 +15,16 @@
     <div id="pins" class="transitions-enabled">
     <% @pins.each do |pin| %>
     <div class="box"></div>
+    
     <div class="panel panel-default">
+      <br/>
+      <center>
     <%= link_to image_tag(pin.image.url(:medium)),pin %><br/>
     <div class="panel-body">
-      
+  
         <%= pin.description %><br/>
+        
+        </center>
         <div class "panel-footer">
         <%= link_to 'Edycja', edit_pin_path(pin) %><br/>
         <%= link_to 'Usun', pin, method: :delete, data: { confirm: 'Jesetes pewien?' } %><br/>
