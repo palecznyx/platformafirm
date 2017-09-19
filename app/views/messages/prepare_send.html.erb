@@ -1,0 +1,17 @@
+Zapraszam do kontaktu poprzez poniższy formularz kontaktowy:
+
+<%= form_for @message, url: send_email_messages_path, method: :post, html: { multipart: true } do |f| %>
+  <div class="field">
+    <%= f.label :to, "Do" %><br>
+    <%= f.text_field :to, class: "small_email_field" %>
+  </div>
+  <div class="field">
+    <%= f.label :content, "Tekst" %><br>
+    <%= f.text_area :content, class: "big_email_field" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Wyślij email" %>
+  </div>
+
+<% end %>

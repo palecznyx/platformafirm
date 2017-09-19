@@ -45,6 +45,8 @@ gem 'devise', '~> 4.2', '>= 4.2.1'
 
 gem 'sprockets', '~> 3.7', '>= 3.7.1'
 
+gem 'mailcatcher'
+
 group :development, :test do
   gem 'byebug'
 end
