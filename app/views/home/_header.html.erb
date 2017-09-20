@@ -15,7 +15,8 @@
       <ul class="nav navbar-nav navbar-right">
        
             <li><%= link_to 'Strona główna', root_path %> </li>
-            <li><%= link_to 'O mnie ', home_about_path %> </li>
+            <li><%= link_to 'O mnie', home_about_path %> </li>
+            <li><%= link_to 'Kontakt', prepare_send_messages_path %> </li>
             <li><%= link_to 'Lista Projektów ', pins_path %> </li>
                <li><%= link_to 'Oferta dla klientów indywidualnych ', home_dane_path %> </li>
               <% if user_signed_in? %>

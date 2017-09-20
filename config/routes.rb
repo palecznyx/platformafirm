@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :pins
   devise_for :users
   devise_for :models
@@ -8,5 +9,10 @@ Rails.application.routes.draw do
   get 'home/dane'
   get 'home/uploader'
 
-  
+  resources :messages, only: [] do
+    collection do
+      get :prepare_send
+      post :send_email
+    end
+  end
 end
