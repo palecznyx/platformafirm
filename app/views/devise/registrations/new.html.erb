@@ -11,15 +11,15 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :password %>
+    <%= f.label :haslo%>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(<%= @minimum_password_length %> znaków)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
   </div>
 
   <div class="form-group">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :Potwiedzenie_hasla %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
   </div>
 
